@@ -33,7 +33,7 @@ import time
 
 BASE_URL = "https://aes.cryptohack.org/ecb_oracle/encrypt/{}"
 # Nếu server báo lỗi rate-limit, hãy tăng giá trị này (ví dụ: 0.1)
-SLEEP_BETWEEN_REQUESTS = 0.0
+SLEEP_BETWEEN_REQUESTS = 0.1
 
 def query_oracle(payload: bytes) -> bytes:
     """Gửi payload đến oracle và nhận lại ciphertext."""
